@@ -4,10 +4,9 @@ on: [push]
 
 jobs:
   run-github-actions:
-    runs-on: windows-latest
+    runs-on: ubuntu-latest
     steps:
       - name: List Files
-        shell: bash
         run: |
           pwd
           ls -a
