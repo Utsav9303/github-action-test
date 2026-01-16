@@ -7,6 +7,7 @@ jobs:
     runs-on: windows-latest
     steps:
       - name: List Files
+        shell: bash
         run: |
           pwd
           ls -a
@@ -18,7 +19,7 @@ jobs:
           # git checkout $GITHUB_SHA
 
       - name: Checkout
-        uses: actions/checkout@v1
+        uses: actions/checkout@v4
       - name: List Files after checkout
         run: |
           pwd
